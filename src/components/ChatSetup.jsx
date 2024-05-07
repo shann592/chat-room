@@ -8,7 +8,10 @@ export default function ChatSetup({ handleRoom }) {
   }
   return (
     <div className="w-screen h-screen p-10 bg-slate-800 flex justify-center items-center">
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form
+        onSubmit={(e) => handleSubmit(e)}
+        className="flex flex-col justify-evenly min-h-28 items-center md:flex-row"
+      >
         <input
           onChange={(e) => setRoomName(e.target.value)}
           value={roomName}

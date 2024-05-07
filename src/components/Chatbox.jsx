@@ -43,7 +43,7 @@ export default function Chatbox({ room }) {
       <div className="w-full min-h-[80%] pt-14 md:flex md:items-center md:flex-row flex flex-col items-center">
         {yoursMessages || othersMessages ? (
           <>
-            <div className="flex flex-col items-center md:items-end w-2/4 min-h-28">
+            <div className="flex flex-col items-center md:items-start w-2/4 min-h-28">
               {othersMessages.map((message) => (
                 <Message message={message} key={message.id} user={user} />
               ))}
