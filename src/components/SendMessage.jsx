@@ -35,11 +35,11 @@ export default function SendMessage({ scroll, room }) {
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="w-full flex justify-center items-center fixed bottom-8 ml-10p-3 rounded-[4px] left-[7%]"
+      className="w-full flex justify-center items-center fixed bottom-8 ml-10p-3 rounded-[4px]"
     >
-      <div className="w-[60%] text-center p-3">
+      <div className="w-[80%] md:w-[60%] text-center p-3">
         <input
-          className="w-[70%] px-2 py-1 rounded-[4px] bg-gray-300 text-lg mr-1"
+          className="w-[70%] md:w-[90%] px-2 py-1 rounded-[4px] bg-gray-300 text-lg mr-1"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
           type="text"
